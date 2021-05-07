@@ -1,0 +1,23 @@
+{
+  "name": "gitpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "servez -p 8080",
+    "get-examples":"npm run clean-examples && ",
+    "clean-examples-folder":"rm -rv examples/*/",
+    "three-examples":" npm run add-examples-js && npm run add-examples-jsm",
+    "add-examples-js":"cp -rv threeJS/examples/js/ examples/js/",
+    "add-examples-jsm":"cp -rv threeJS/examples/jsm/ examples/jsm",
+    "add-three-build":"cp -rv threeJS/build/ build/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "servez": "^1.11.0"
+  }
+}
